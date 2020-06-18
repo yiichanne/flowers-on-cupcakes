@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="cupcakes, party, birthday, instagram, instagrammable cupcakes" />
+    <title>Flowers on Cupcakes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--CSS & JavaScript-->
+    <link href="styles/layout.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
+    <script src="scripts/carousel.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <!--Fonts & Font Awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' rel='stylesheet'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+
+<body>
+    <header>
+        <!--Collapse when <768px-->
+        <nav class="navbar navbar-expand-md bg-light navbar-light text-uppercase">
+
+            <!--Logo & Brand-->
+            <a class="navbar-brand active" href="index.html"><img src="images/logo.png" id="logo" class="mb-1 mr-1"
+                    alt="Flowers on Cupcakes Logo" />Flowers on Cupcakes</a>
+
+            <!--Use flex to layout: when expanded, social media on right of links; when collapsed, social media on left of toggler-->
+            <div class="d-flex flex-row order-md-3">
+                <!--Social media icons links-->
+                <ul class="navbar-nav flex-row">
+                    <!--Both hidden when <sm, have margin between them when <md, negative margin when >md-->
+                    <li class="nav-item mr-md-n2 mr-2 d-none d-sm-block">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i
+                                class='fab fa-lg fa-facebook-square'></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i
+                                class='fab fa-lg fa-instagram'></i></a>
+                    </li>
+                </ul>
+                <!-- Toggler/collapsible Button (Less padding when <sm)-->
+                <button class="navbar-toggler ml-2 p-1 p-sm-2" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar links-->
+            <div class="collapse navbar-collapse order-md-2" id="collapsibleNavbar">
+                <ul class="navbar-nav text-center ml-auto">
+                    <!--Hide 'Home' nav when >768px (expand)-->
+                    <li class="nav-item d-md-none"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <!--Dropdown menu for cupcakes links-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cupcakes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cupcakes.html">Our Cupcakes</a>
+                            <a class="dropdown-item" href="cupcakes.html#priceList">Price List</a>
+                            <a class="dropdown-item" href="cupcakes.html#promotions">Promotions</a>
+                            <a class="dropdown-item" href="cupcakes.html#nutrition">Nutrition Information</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="order_status.html">Order Status</a>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+        <div class="container text-secondary w-75 my-3">
+            <!--Container 75% width-->
+            <!--Scroll to top button (circular)-->
+            <button class="btn btn-secondary rounded-circle" onclick="topFunction()" id="upBtn" title="Go to top">
+                <i class="fas fa-chevron-up"></i></button>
+            <!--if don't want icon, can replace with special char &and; or &#8896;-->
+
+            <!--Margin on x-axis when >lg; On screens >lg, prev & next buttons hidden unless user hover on slideshow-->
+            <div class="slideshow-container mx-lg-5" onmouseover="showButtons()" onmouseout="hideButtons()">
+                <!--Slides-->
+                <figure class="figure mySlides toFade">
+                    <img class="img-fluid slide" src="images/display.jpeg" alt="Display Set-ups">
+                </figure>
+                <figure class="figure mySlides toFade">
+                    <img class="img-fluid slide" src="images/display3.jpg" alt="Display Set-ups">
+                </figure>
+                <figure class="figure mySlides toFade">
+                    <img class="img-fluid slide" src="images/display4.jpg" alt="Display Set-ups">
+                </figure>
+                <figure class="figure mySlides toFade">
+                    <img class="img-fluid slide" src="images/display5.jpg" alt="Display Set-ups">
+                </figure>
+                <figure class="figure mySlides toFade">
+                    <img class="img-fluid slide" src="images/display2.jpg" alt="Display Set-ups">
+                </figure>
+
+                <!-- Next and previous buttons -->
+                <a class="prev p-3 rounded-right" onclick="plusSlides(-1)"><i class="fa fa-lg fa-arrow-left"></i></a>
+                <!--if don't want icon, can replace with special char &#10094;-->
+                <a class="next p-3 rounded-left" onclick="plusSlides(1)"><i class="fa fa-lg fa-arrow-right"></i></a>
+                <!--if don't want icon, can replace with special char &#10095;-->
+
+                <!-- Dots -->
+                <div class="dots">
+                    <span class="dot rounded-circle" onclick="currentSlide(1)"></span>
+                    <span class="dot rounded-circle" onclick="currentSlide(2)"></span>
+                    <span class="dot rounded-circle" onclick="currentSlide(3)"></span>
+                    <span class="dot rounded-circle" onclick="currentSlide(4)"></span>
+                    <span class="dot rounded-circle" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+
+
+            <article id="testimonials">
+                <h1 class="text-center">Client's Testimonials</h1>
+                <div>
+                    <!--Left quote icon float left of blockquote-->
+                    <i class="fas fa-quote-left fa-lg float-left"></i>
+                    <blockquote class="blockquote ml-4">
+                        <p class="mb-0">
+                            Thank you once again for the cupcakes. From my 21st bday
+                            to my sister's 21st bday, thank you for being part of such great milestones!</p>
+                        <footer class="blockquote-footer">Shai</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <!--Left quote icon float left of blockquote, hidden on lg & above-->
+                    <i class="fas fa-quote-left fa-lg d-md-block d-lg-none float-left"></i>
+                    <!--Right quote icon float right of blockquote, visible on only >lg -->
+                    <i class="fas fa-quote-right fa-lg d-none d-lg-block float-right"></i>
+                    <!--Right margin on >lg, text aligned right on >lg-->
+                    <blockquote class="blockquote ml-4 mr-lg-4 text-lg-right">
+                        <p class="mb-0">Thank you so much! The setup was so pretty! Not only
+                            are the cupcakes pretty but they taste so yummy!
+                        </p>
+                        <footer class="blockquote-footer">Jenny</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <!--Left quote icon float left of blockquote-->
+                    <i class="fas fa-quote-left fa-lg float-left"></i>
+                    <blockquote class="blockquote ml-4">
+                        <p class="mb-0">We received many positive feedbacks from relative and friends - it made my
+                            dessert table look so good!! Such art pieces!!</p>
+                        <footer class="blockquote-footer">Shelly</footer>
+                    </blockquote>
+                </div>
+                <div>
+                    <!--Left quote icon float left of blockquote, hidden on lg & above-->
+                    <i class="fas fa-quote-left fa-lg d-md-block d-lg-none float-left"></i>
+                    <!--Right quote icon float right of blockquote, visible on only >lg -->
+                    <i class="fas fa-quote-right fa-lg d-none d-lg-block float-right"></i>
+                    <!--Right margin on >lg, text aligned right on >lg-->
+                    <blockquote class="blockquote mr-lg-4 ml-4 text-lg-right">
+                        <p class="mb-0">The cupcakes were so pretty!! And they were also so delicious! Would definitely
+                            recommend to my friends!</p>
+                        <footer class="blockquote-footer">Janson</footer>
+                    </blockquote>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid text-center bg-light text-secondary">
+            &copy; 2019 Flowers on Cupcakes. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

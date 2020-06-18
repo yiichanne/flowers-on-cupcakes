@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="cupcakes, party, birthday, instagrammable cupcakes" />
+    <title>Order Status | Flowers on Cupcakes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--CSS & JavaScript-->
+    <link href="styles/layout.css" rel="stylesheet" />
+    <script src="scripts/scroll.js" defer></script>
+    <!--Fonts & Font Awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' rel='stylesheet'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+</head>
+
+<body>
+    <header>
+        <!--Collapse when <768px-->
+        <nav class="navbar navbar-expand-md bg-light navbar-light text-uppercase">
+
+            <!--Logo & Brand-->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" class="mb-1 mr-1"
+                    alt="Flowers on Cupcakes Logo" />Flowers on Cupcakes</a>
+
+            <!--Use flex to layout: when expanded, social media on right of links; when collapsed, social media on left of toggler-->
+            <div class="d-flex flex-row order-md-3">
+                <!--Social media icons links-->
+                <ul class="navbar-nav flex-row">
+                    <!--Both hidden when <sm, have margin between them when <md, negative margin when >md-->
+                    <li class="nav-item mr-md-n2 mr-2 d-none d-sm-block">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i
+                                class='fab fa-lg fa-facebook-square'></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i
+                                class='fab fa-lg fa-instagram'></i></a>
+                    </li>
+                </ul>
+                <!-- Toggler/collapsible Button (Less padding when <sm)-->
+                <button class="navbar-toggler ml-2 p-1 p-sm-2" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar links-->
+            <div class="collapse navbar-collapse order-md-2" id="collapsibleNavbar">
+                <ul class="navbar-nav text-center ml-auto">
+                    <!--Hide 'Home' nav when >768px (expand)-->
+                    <li class="nav-item d-md-none"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <!--Dropdown menu for cupcakes links-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cupcakes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cupcakes.html">Our Cupcakes</a>
+                            <a class="dropdown-item" href="cupcakes.html#priceList">Price List</a>
+                            <a class="dropdown-item" href="cupcakes.html#promotions">Promotions</a>
+                            <a class="dropdown-item" href="cupcakes.html#nutrition">Nutrition Information</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="order_status.html">Order Status</a>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+        <div class="container text-secondary text-center w-75 my-3">
+            <!--Scroll to top button (circular)-->
+            <button class="btn btn-secondary rounded-circle" onclick="topFunction()" id="upBtn" title="Go to top">
+                <i class="fas fa-chevron-up"></i></button>
+            <!--if don't want icon, can replace with special char &and; or &#8896;-->
+
+            <article id="currentOrders">
+                <h1>Current Order Statuses</h1>
+                <p>Please <a href="forms.html" target="_blank">contact
+                        us</a> if you have any queries.</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <!--Headings-->
+                                <th scope="col">#</th>
+                                <th scope="col">Order #ID</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Event Date</th>
+                                <th scope="col">Delivery Mode</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--Information for each order #ID-->
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>12345</td>
+                                <td>Out for delivery</td>
+                                <td>17/08/2019</td>
+                                <td>Delivery</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>12349</td>
+                                <td>Ready for event</td>
+                                <td>19/08/19</td>
+                                <td>Delivery</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>12346</td>
+                                <td>Ready for event</td>
+                                <td>19/08/19</td>
+                                <td>Self-Collect</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>12347</td>
+                                <td>Baking</td>
+                                <td>20/08/19</td>
+                                <td>Delivery</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>12348</td>
+                                <td>Confirmed</td>
+                                <td>25/08/19</td>
+                                <td>Delivery</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer w-100">
+        <div class="container-fluid text-center bg-light text-secondary">
+            &copy; 2019 Flowers on Cupcakes. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

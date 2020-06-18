@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/*Table border styling for price list table*/
+#tableBorder {
+    border-bottom: 1px solid #ed969e;
+}

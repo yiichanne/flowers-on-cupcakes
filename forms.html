@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="cupcakes, party, birthday, instagrammable cupcakes" />
+    <title>Contact Us | Flowers on Cupcakes</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+    <!--CSS & JavaScript-->
+    <script src="scripts/forms.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <link href="styles/layout.css" rel="stylesheet" />
+    <link href="styles/forms.css" rel="stylesheet" />
+    <!--Fonts & Font Awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' rel='stylesheet'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+
+<body>
+    <header>
+        <!--Collapse when <768px-->
+        <nav class="navbar navbar-expand-md bg-light navbar-light text-uppercase">
+
+            <!--Logo & Brand-->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" id="logo" class="mb-1 mr-1"
+                    alt="Flowers on Cupcakes Logo" />Flowers on Cupcakes</a>
+
+            <!--Use flex to layout: when expanded, social media on right of links; when collapsed, social media on left of toggler-->
+            <div class="d-flex flex-row order-md-3">
+                <!--Social media icons links-->
+                <ul class="navbar-nav flex-row">
+                    <!--Both hidden when <sm, have margin between them when <md, negative margin when >md-->
+                    <li class="nav-item mr-md-n2 mr-2 d-none d-sm-block">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank"><i
+                                class='fab fa-lg fa-facebook-square'></i></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank"><i
+                                class='fab fa-lg fa-instagram'></i></a>
+                    </li>
+                </ul>
+                <!-- Toggler/collapsible Button (Less padding when <sm)-->
+                <button class="navbar-toggler ml-2 p-1 p-sm-2" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navbar links-->
+            <div class="collapse navbar-collapse order-md-2" id="collapsibleNavbar">
+                <ul class="navbar-nav text-center ml-auto">
+                    <!--Hide 'Home' nav when >768px (expand)-->
+                    <li class="nav-item d-md-none"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <!--Dropdown menu for cupcakes links-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cupcakes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cupcakes.html">Our Cupcakes</a>
+                            <a class="dropdown-item" href="cupcakes.html#priceList">Price List</a>
+                            <a class="dropdown-item" href="cupcakes.html#promotions">Promotions</a>
+                            <a class="dropdown-item" href="cupcakes.html#nutrition">Nutrition Information</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="order_status.html">Order Status</a>
+                    <li class="nav-item"><a class="nav-link active" href="forms.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!--Contact Section-->
+    <section id="contact">
+        <div class="container text-secondary text-center w-75 mt-3 mb-4">
+            <!--Scroll to top button (circular)-->
+            <button class="btn btn-secondary rounded-circle" onclick="topFunction()" id="upBtn" title="Go to top">
+                <i class="fas fa-chevron-up"></i></button>
+            <!--if don't want icon, can replace with special char &#8896;-->
+            <figure class="figure">
+                <img class="img-fluid px-lg-5" src="images/flowers_cupcakes.jpg"
+                    alt="Picture of our signature flower cupcakes">
+            </figure>
+            <h1>Contact Us</h1>
+            <div class="row">
+                <!--Span 1 col when <md, 6 col when >md, span 7 cols when >lg-->
+                <div class="col-md col-lg-7">
+                    <section id="leftColumn">
+                        <p><strong>Email: </strong><a
+                                href="mailto:flowersoncupcakes@gmail.com">flowersoncupcakes@gmail.com</a>
+                        </p>
+                        <p><strong>Contact number:</strong> +65 9123 4567</p>
+                        <p>All order enquiries sent outside of working hours will be addressed the next working day.
+                        </p>
+                    </section>
+                </div>
+                <!--Span 1 col when <md, 6 col when >md, span 5 cols when >lg-->
+                <div class="col-md col-lg-5">
+                    <section id="rightColumn">
+                        <h2>Our Business Hours</h2>
+                        <p>Mon to Fri: 9am to 5pm</p>
+                        <h2>Our Social Media</h2>
+                        <p><a href="https://www.facebook.com/" target="_blank"><i
+                                    class='fab fa-lg fa-facebook-square mr-1'></i>Facebook</a></p>
+                        <p><a href="https://www.instagram.com/" target="_blank"><i
+                                    class='fab fa-lg fa-instagram mr-1'></i>Instagram</a></p>
+                    </section>
+                </div>
+            </div>
+            <!--Contact Form-->
+            <article id="form">
+                <h1>Drop us a message!</h1>
+                <p>Required values are marked by an asterisk (*)</p>
+                <form name="contactForm" class="w-75 mx-auto text-left" id="contactForm" action="thankyou.html"
+                    method="post" onsubmit="return validateForm()">
+                    <fieldset id="custInfo">
+                        <!--Salutation-->
+                        <div class="form-group row">
+                            <!--Each input have 1 col each for label & input for >md; 1 col total for <md-->
+                            <label for="salutation" class="col-md-3 col-form-label">Salutation</label>
+                            <div class="col-md-9">
+                                <select class="form-control" name="custSalutation" id="salutation">
+                                    <option value="ms">Ms.</option>
+                                    <option value="mrs">Mrs.</option>
+                                    <option value="mr">Mr.</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Name-->
+                        <div class="form-group row">
+                            <label for="name" class="col-md-3 col-form-label">Name*</label>
+                            <div class="col-md-9">
+                                <!--All required inputs have verification on user input & when input loses focus-->
+                                <input name="custName" id="name" type="text" class="form-control"
+                                    oninput="validateName()" onblur="validateName()" />
+                                <span id="invalidname" class="invalid-feedback">Name is required.</span>
+                            </div>
+                        </div>
+                        <!--Phone-->
+                        <div class="form-group row">
+                            <label for="phone" class="col-md-3 col-form-label">Phone number*</label>
+                            <div class="col-md-9">
+                                <input name="custPhone" id="phone" type="tel" placeholder="91234567"
+                                    class="form-control" oninput="validatePhone()" onblur="validatePhone()" />
+                                <span id="invalidphone" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+                        <!--Email-->
+                        <div class="form-group row">
+                            <label for="mail" class="col-md-3 col-form-label">Email*</label>
+                            <div class="col-md-9">
+                                <input name="custEmail" id="mail" placeholder="name@example.com" class="form-control"
+                                    oninput="validateEmail()" onblur="validateEmail()" />
+                                <span id="invalidemail" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+                        <!--Where user heard of us-->
+                        <div class="form-group row">
+                            <label for="info" class="col-md-3 col-form-label">Where did you hear about us?* (select
+                                all that apply)</label>
+                            <div class="col-md-9">
+                                <select multiple class="form-control" name="infoSrc" id="info" size="5"
+                                    oninput="validateInfo()" onblur="validateInfo()">
+                                    <option value="internet">Internet</option>
+                                    <option value="mag">Magazine</option>
+                                    <option value="news">Newspaper</option>
+                                    <option value="word">Word of Mouth</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span id="invalidinfo" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+                        <!--Subject-->
+                        <div class="form-group row">
+                            <label for="subject" class="col-md-3 col-form-label">Subject*</label>
+                            <div class="col-md-9">
+                                <select id="subject" class="form-control" oninput="validateSubject()"
+                                    onblur="validateSubject()">
+                                    <option selected disabled value="">Choose...</option>
+                                    <option value="enquiry">General Enquiries</option>
+                                    <option value="order">Order</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                                <span id="invalidsubj" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+                        <!--Message-->
+                        <div class="form-group row">
+                            <label for="message" class="col-md-3 col-form-label">Message*</label>
+                            <div class="col-md-9">
+                                <textarea name="custMessage" id="message" class="form-control" rows="3"
+                                    oninput="validateMessage()" onblur="validateMessage()"></textarea>
+                                <span id="invalidmsg" class="invalid-feedback"></span>
+                            </div>
+                        </div>
+                        <!--Add to mailing list-->
+                        <div class="form-check text-center">
+                            <input name="form-check-input" id="mailCB" value="yes" type="checkbox" />
+                            <!--display inline-->
+                            <label class="form-check-label d-inline" for="mailCB">Add me to your mailing list for great
+                                deals and specials!</label>
+                        </div>
+                    </fieldset>
+                    <!--Buttons-->
+                    <div id="buttons" class="mt-2 text-center">
+                        <button type="submit" class="btn btn-outline-secondary" value="Submit">Submit</button>
+                        <input type="reset" class="btn btn-outline-secondary" value="Cancel">
+                    </div>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid text-center bg-light text-secondary">
+            &copy; 2019 Flowers on Cupcakes. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

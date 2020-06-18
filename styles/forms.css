@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*Error Message Style*/
+.invalid-feedback {
+    font-size: 90%;
+}
+
+/*Selection Box Style*/
+select {
+    overflow-x: auto; /*Enable horizontal scrolling when needed*/
+    overflow-y: hidden; /*Hide vertical scroll*/
+}
